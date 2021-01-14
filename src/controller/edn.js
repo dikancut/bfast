@@ -141,7 +141,7 @@ const getEdn = async (param = null) =>{
         // let ins = await insertQuery(query_batch_oos);
         //  console.log(query_batch_oos);
          
-            let res = await Promise.all([get_batch_account({"from":from,"to":to}),get_batch_channel({"from":from,"to":to}),batch_sof_monthly({"from":from,"to":to})]);
+            let res = await Promise.all([get_batch_account({"from":from,"to":to}),get_batch_channel({"from":from,"to":to}),batch_sof_monthly({"from":from,"to":to}),get_batch_oos_monthly({"from":from,"to":to})]);
             // console.log(res);
             
          
