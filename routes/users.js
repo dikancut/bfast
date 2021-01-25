@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var tcontr = require('../src/controller/edn')
+var tcontr = require('../src/controller/edn');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
