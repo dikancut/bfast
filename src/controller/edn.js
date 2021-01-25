@@ -251,7 +251,7 @@ const get_batch_oos_monthly = async (param) =>{
          where date >= '${from}'
          and date <= '${to}'
          group by branch,account,year(date),month(date),role 
-    on duplicate key update value = nilai,total = total,last_update = last_update, oos_sof_product = oos_sof_product`);
+    on duplicate key update nilai = nilai,total = total,last_update = last_update, oos_sof_product = oos_sof_product`);
     con.end_connection();
     return r;
 }
