@@ -1,9 +1,10 @@
 {
-  "plugins": [
-    ["@babel/plugin-transform-runtime",
-      {
-        "regenerator": true
-      }
-    ]
-  ]
-}
+    "presets": [
+      ["@babel/preset-env", {
+        "targets": {
+          "node": "10"
+        }
+      }]
+    ],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+  }
